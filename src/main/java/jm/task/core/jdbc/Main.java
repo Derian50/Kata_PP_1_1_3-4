@@ -23,6 +23,7 @@ public class Main {
         System.out.println(service.getAllUsers().toString());
         service.cleanUsersTable();
         service.dropUsersTable();
+        //Does nothing if used Hibernate
         Util.closeConnection();
     }
 }
